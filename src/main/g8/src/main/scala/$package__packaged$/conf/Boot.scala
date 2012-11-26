@@ -52,7 +52,7 @@ class Boot extends Bootable {
 
     //Init the jQuery module, see http://liftweb.net/jquery for more information.
     LiftRules.jsArtifacts = JQueryArtifacts
-    JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
+    JQueryModule.InitParam.JQuery=JQueryModule.JQuery182
     JQueryModule.init()
 
   }

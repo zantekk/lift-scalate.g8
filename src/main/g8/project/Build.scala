@@ -19,7 +19,7 @@ object Build extends sbt.Build {
       Seq(
         "net.liftweb" %% "lift-webkit" % lv % "compile",
         "net.liftweb" %% "lift-testkit" % lv % "test",
-        "net.liftmodules" %% "lift-jquery-module" % (liftVersion + "-1.1-+") % "compile",
+        "net.liftmodules" %% "lift-jquery-module" % (liftVersion + "-" + "$lift_jquery_version$") % "compile",
         "org.eclipse.jetty" % "jetty-webapp" % "8.1.7.v20120910" % "container;test",
         "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided",
         "ch.qos.logback" % "logback-classic" % "1.0.7" % "compile",
