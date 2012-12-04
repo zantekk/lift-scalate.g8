@@ -19,6 +19,7 @@ object Plugins extends Build {
       )
     ),
     addSbtPlugin("com.zantekk.sbt" % "sbt-zantekk" % "1.3.0-+"),
+    addSbtPlugin("com.zantekk.sbt" % "sbt-lift" % "0.2.0-+"),
     libraryDependencies += "com.github.siasia" %% "xsbt-web-plugin" % "0.12.0-0.2.11.1"
     )
 }
