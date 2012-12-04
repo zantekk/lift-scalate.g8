@@ -1,0 +1,71 @@
+html(xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/")
+  head
+    meta(content="text/html; charset=UTF-8" http-equiv="content-type")
+    meta(name="description" content="")
+    meta(name="keywords" content="")
+    title(data-lift="Menu.title")
+      |App:
+    style(data-lift="CSS.blueprint")
+    style(data-lift="CSS.fancyType")
+    script#jquery(src="/#{LiftRules.resourceServerPath}/jquery.js")
+    script#json(src="/#{LiftRules.resourceServerPath}/json.js")
+    :css
+      .edit_error_class {
+        display: block;
+        color: red;
+      }
+
+      .sidebar ul {
+        margin:0;
+        padding:0;
+        border-bottom:1px solid #ccc;
+      }
+
+      .sidebar ul li {
+        margin:0;
+        padding:0;
+        list-style:none;
+        border:1px solid #ccc;
+        border-bottom:none;
+      }
+
+      .sidebar ul li a {
+        display:block;
+        padding:3px;
+        text-indent:30px;
+        text-decoration:none;
+      }
+
+      .sidebar ul li span {
+        display:block;
+        padding:3px;
+        text-indent:30px;
+        text-decoration:none;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #eee;
+      }
+  body
+    .container
+      .column.span-12.last(style="text-align: right")
+      h1.alt
+        |Lift Application
+        img#ajax-loader(alt="" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif")
+
+      hr
+
+      .column.span-6.colborder.sidebar
+        hr.space
+        span(class="lift:Menu.builder")
+        div(class="lift:Msgs?showAll=true")
+        hr.space
+
+      .column.span-17.last
+        #content
+      hr
+
+      .column.span-23.last(style="text-align: center")
+      h4.alt
+        :markdown
+          [Lift](http://www.liftweb.net) is Copyright 2007-2012 WorldWide Conferencing, LLC. Distributed under an Apache 2.0 License.

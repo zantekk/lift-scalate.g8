@@ -11,6 +11,7 @@ import sitemap._
 import Loc._
 import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
+import com.zantekk.lift.ScalateView
 
 
 /**
@@ -49,6 +50,10 @@ class Boot extends Bootable {
     // Use HTML5 for rendering
     LiftRules.htmlProperties.default.set((r: Req) =>
       new Html5Properties(r.userAgent))
+
+    // Use Scalate for view templates
+    val scalateView = new ScalateView
+    scalateView.register()
 
     //Init the jQuery module, see http://liftweb.net/jquery for more information.
     LiftRules.jsArtifacts = JQueryArtifacts

@@ -1,0 +1,12 @@
+!!!
+html(xmlns="http://www.w3.org/1999/xhtml")
+  head
+    meta(content="text/html; charset=UTF-8" http-equiv="content-type")
+    title Home
+  body(class="lift:content_id=main")
+    #main(data-lift="surround?with=default;at=content")
+      h2 Welcome to $name$!
+      p
+        span(data-lift='helloWorld.howdy')
+          | Welcome to your Lift app at
+          span#time Time goes here
