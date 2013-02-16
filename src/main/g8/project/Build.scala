@@ -24,7 +24,7 @@ object Build extends sbt.Build {
   )
 
   object LibraryDependencies {
-    lazy val scalateJrebel = "org.fusesource.scalate" %% "scalate-jrebel" % "1.6.1  % "provided"
+    lazy val scalateJrebel = "org.fusesource.scalate" %% "scalate-jrebel" % "1.6.1"  % "provided"
     lazy val jettyWebapp = "org.eclipse.jetty" % "jetty-webapp" % "8.1.7.v20120910" % "container;test"
     lazy val specs2 = "org.specs2" %% "specs2" % "1.12.1" % "test"
 
